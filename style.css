@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  margin: 20px auto;
+  width: 1000px;
+}
+.game-info {
+  display: flex;
+}
+.game-info .game-name {
+  flex: 1;
+}
+.game-info .game-category {
+  flex: 1;
+  text-align: right;
+}
+.game-info .game-category span {
+  text-transform: capitalize;
+  color: #e91e63;
+  font-weight: bold;
+}
+hr {
+  border: 1px solid #000;
+}
+.row {
+  display: flex;
+}
+.row .hangman-draw {
+  flex: 1;
+  background-color: antiquewhite;
+  padding: 20px;
+  height: 324px;
+}
+.row .hangman-draw .the-draw {
+  width: 60px;
+  height: 280px;
+  border-bottom: 4px solid #000;
+  position: relative;
+  margin: auto;
+}
+
+.row .the-stand::after {
+  content: "";
+  width: 4px;
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  left: calc(50% - 2px);
+}
+
+.row .the-hang::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #000;
+  left: 15px;
+  top: 10px;
+}
+
+.row .the-hang::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: #000;
+  top: 10px;
+  left: 190%;
+}
+
+.row .letters {
+  background-color: aquamarine;
+  flex: 1;
+}
