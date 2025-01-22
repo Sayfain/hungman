@@ -138,7 +138,27 @@ hr {
   left: 135px;
 }
 
-/* .row .letters {
-  background-color: aquamarine;
+.row .letters {
+  background-color: #eee;
   flex: 1;
-} */
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.row .letters .letter-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #009688;
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
