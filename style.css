@@ -72,8 +72,73 @@ hr {
   top: 10px;
   left: 190%;
 }
+.row .hangman-draw .the-draw .the-rope {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  left: calc(100% + 15px);
+  top: 37px;
+  border: 4px dashed #000;
+}
 
-.row .letters {
+.hangman-draw .the-man .head {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 4px solid #ff1414;
+  left: 85px;
+  top: 45px;
+}
+
+.hangman-draw .the-man .body {
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  background-color: #000;
+  top: 100px;
+  left: 115px;
+}
+.hangman-draw .the-man .hands::after,
+.hangman-draw .the-man .hands::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 60px;
+  background-color: #000;
+
+  top: 110px;
+}
+.hangman-draw .the-man .hands::after {
+  rotate: 120deg;
+  left: 92px;
+}
+.hangman-draw .the-man .hands::before {
+  rotate: -120deg;
+  left: 138px;
+}
+.hangman-draw .the-man .legs::after,
+.hangman-draw .the-man .legs::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 55px;
+  background-color: #000;
+  top: 200px;
+}
+.hangman-draw .the-man .legs::after {
+  rotate: 45deg;
+  left: 95px;
+}
+
+.hangman-draw .the-man .legs::before {
+  rotate: -45deg;
+  left: 135px;
+}
+
+/* .row .letters {
   background-color: aquamarine;
   flex: 1;
-}
+} */
